@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - Telegram Clone</title>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/auth.css') }}">
+    @vite(['resources/css/app.css', 'resources/css/auth.css'])
 </head>
 <body class="auth-body">
     <div class="auth-container">
@@ -60,6 +59,6 @@
         </div>
     </div>
     
-    <script src="{{ asset('js/auth.js') }}"></script>
+    @vite(['resources/js/auth.js'])
 </body>
 </html>

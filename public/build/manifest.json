@@ -1,0 +1,44 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-BJLV8NAv.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/css/auth.css": {
+    "file": "assets/auth-DLuCwCXg.css",
+    "src": "resources/css/auth.css",
+    "isEntry": true,
+    "names": [
+      "auth.css"
+    ]
+  },
+  "resources/css/chat.css": {
+    "file": "assets/chat-CGkltq_h.css",
+    "src": "resources/css/chat.css",
+    "isEntry": true,
+    "names": [
+      "chat.css"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-gVaryNbf.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/auth.js": {
+    "file": "assets/auth-BiWyRWo-.js",
+    "name": "auth",
+    "src": "resources/js/auth.js",
+    "isEntry": true
+  },
+  "resources/js/chat.js": {
+    "file": "assets/chat-DszDjWqy.js",
+    "name": "chat",
+    "src": "resources/js/chat.js",
+    "isEntry": true
+  }
+}
