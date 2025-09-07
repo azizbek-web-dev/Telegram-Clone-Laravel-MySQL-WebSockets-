@@ -53,17 +53,44 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-6. Configure your database in `.env` file
+6. Configure your database in `.env` file:
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=telegram_clone
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
 7. Run migrations:
 ```bash
 php artisan migrate
 ```
 
-8. Start the development server:
+8. Compile frontend assets:
+```bash
+npm run build
+```
+
+9. Start the development server:
 ```bash
 php artisan serve
 ```
+
+10. Open your browser and visit `http://localhost:8000`
+
+## 🎨 Frontend Features
+
+- **Modern Authentication**: Clean login and registration forms
+- **Real-time Chat Interface**: Telegram-like messaging interface
+- **Responsive Design**: Works on desktop, tablet, and mobile
+- **Dark Mode Support**: Automatic dark mode detection
+- **Minimalistic UI**: Clean, professional design
+- **API Integration**: Full integration with backend API
+- **File Upload Support**: Profile images and media messages
+- **Search Functionality**: User and chat search
+- **Modal Dialogs**: Smooth interactions for creating chats
 
 ## 📝 License
 
