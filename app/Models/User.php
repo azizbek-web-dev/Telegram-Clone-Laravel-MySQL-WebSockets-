@@ -63,7 +63,7 @@ class User extends Authenticatable
      */
     public function emailVerifications()
     {
-        return $this->hasMany(EmailVerification::class);
+        return $this->hasMany(\App\Models\EmailVerification::class);
     }
 
     /**
@@ -71,7 +71,7 @@ class User extends Authenticatable
      */
     public function userSessions()
     {
-        return $this->hasMany(UserSession::class);
+        return $this->hasMany(\App\Models\UserSession::class);
     }
 
     /**
@@ -79,7 +79,7 @@ class User extends Authenticatable
      */
     public function profileImages()
     {
-        return $this->hasMany(UserProfileImage::class);
+        return $this->hasMany(\App\Models\UserProfileImage::class);
     }
 
     /**
@@ -87,7 +87,7 @@ class User extends Authenticatable
      */
     public function chats()
     {
-        return $this->belongsToMany(Chat::class, 'chat_members')
+        return $this->belongsToMany(\App\Models\Chat::class, 'chat_members')
                     ->withPivot('role', 'joined_at', 'is_active')
                     ->withTimestamps();
     }
@@ -97,7 +97,7 @@ class User extends Authenticatable
      */
     public function messages()
     {
-        return $this->hasMany(Message::class, 'sender_id');
+        return $this->hasMany(\App\Models\Message::class, 'sender_id');
     }
 
     /**
@@ -105,7 +105,7 @@ class User extends Authenticatable
      */
     public function messageReads()
     {
-        return $this->hasMany(MessageRead::class);
+        return $this->hasMany(\App\Models\MessageRead::class);
     }
 
     /**
@@ -113,6 +113,6 @@ class User extends Authenticatable
      */
     public function typingIndicators()
     {
-        return $this->hasMany(TypingIndicator::class);
+        return $this->hasMany(\App\Models\TypingIndicator::class);
     }
 }
